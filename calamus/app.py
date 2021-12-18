@@ -1,5 +1,7 @@
+from .preprocessor import Preprocessor
+
 class Calamus:
 
     @staticmethod
     def run():
-        print("called!!!!!")
+        Preprocessor.main()
