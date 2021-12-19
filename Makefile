@@ -7,7 +7,10 @@ lint:
 	pycodestyle
 
 fix-lint:
-	autopep8 --in-place --aggressive ./**/*.py
+	autopep8 --in-place --aggressive --recursive .
+
+reqs:
+	@python -m pip3 freeze > requirements.txt
 
 setup:
-	@python -m pip install -r requirements.txt
+	@python -m pip3 install -r requirements.txt
